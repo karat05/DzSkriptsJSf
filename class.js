@@ -1,15 +1,9 @@
-let a = prompt();
-
-switch (a) {
-    case 3:
-    case 5:
-        alert("Рядом");
-        break;
-    case 4:
-        alert("В точку");
-        break;
-    
-    default:
-            alert("МММ");
-            break;
+let numCheck = (num1, num2) => {
+        if(num1 > num2)
+                console.log(num1)
+        else if(num1 < num2)
+                console.log(num2)
+        else{console.log("they are equal")}
 }
+ 
+numCheck(prompt(), prompt())
