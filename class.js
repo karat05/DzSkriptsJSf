@@ -1,9 +1,20 @@
-let numCheck = (num1, num2) => {
-        if(num1 > num2)
-                console.log(num1)
-        else if(num1 < num2)
-                console.log(num2)
-        else{console.log("they are equal")}
+function lx() {
+    let number = parseInt(prompt("введи число от 0 до 3"));
+    
+    switch (number) {
+        case 0:
+            alert("0");
+            break;
+        case 1:
+            alert("1");
+            break;
+        case 2:
+        case 3:
+            alert("Вы ввели число от 2 до 3");
+            break;
+        default:
+            alert("вне диапозона от 0 до 3");
+    }
 }
- 
-numCheck(prompt(), prompt())
+
+lx();

@@ -498,3 +498,51 @@ numCheck(prompt(), prompt())
 РЕАЛИЗОВАТЬ С ПОМОЩЬЮ ФУНКЦИИ. При этом, одна функция должна быть БЕЗ ПАРАМЕТРОВ/АРГУМЕНТОВ, а вторая функция - с параметрами/аргументами.
  
 + Решать задания code-basics.com (создать уч.запись). 
+
+с аргументом
+
+function lx(n) {
+    switch (n) {
+        case 0:
+            alert("0");
+            break;
+        case 1:
+            alert("1");
+            break;
+        case 2:
+        case 3:
+            alert("вы ввели 2 и 3");
+            break;
+        default:
+            alert("число вне диапазона от 0 до 3");
+    }
+}
+lx(parseInt(prompt("Введите число от 0 до 3:")));
+
+
+
+
+
+без аргументам
+
+
+function lx() {
+    let number = parseInt(prompt("введи число от 0 до 3"));
+    
+    switch (number) {
+        case 0:
+            alert("0");
+            break;
+        case 1:
+            alert("1");
+            break;
+        case 2:
+        case 3:
+            alert("Вы ввели число от 2 до 3");
+            break;
+        default:
+            alert("вне диапозона от 0 до 3");
+    }
+}
+
+lx();
