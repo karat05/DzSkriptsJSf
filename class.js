@@ -1,20 +1,18 @@
-function lx() {
-    let number = parseInt(prompt("введи число от 0 до 3"));
-    
-    switch (number) {
-        case 0:
-            alert("0");
-            break;
-        case 1:
-            alert("1");
-            break;
-        case 2:
-        case 3:
-            alert("Вы ввели число от 2 до 3");
-            break;
-        default:
-            alert("вне диапозона от 0 до 3");
-    }
+let a = +prompt("Напишите сумму оценок за первый предмет")
+let b = +prompt("Напишите сумму оценок за второй предмет")
+let c = +prompt("Напишите сумму оценок за первый предмет")
+let result
+result = a + b + c
+let sum = result / 3
+if(result >= 90 && result <=100){
+    alert("Оценка 5")
 }
-
-lx();
+else if(result >=75 && result <=89){
+    alert("Оценка 4")
+}
+else if(result >= 60 && result <= 74){
+    alert("Оценка 3")
+}
+else{
+    alert("Оценка 2")
+}
