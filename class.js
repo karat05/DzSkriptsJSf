@@ -1,18 +1,12 @@
-let a = +prompt("Напишите сумму оценок за первый предмет")
-let b = +prompt("Напишите сумму оценок за второй предмет")
-let c = +prompt("Напишите сумму оценок за первый предмет")
-let result
-result = a + b + c
-let sum = result / 3
-if(result >= 90 && result <=100){
-    alert("Оценка 5")
-}
-else if(result >=75 && result <=89){
-    alert("Оценка 4")
-}
-else if(result >= 60 && result <= 74){
-    alert("Оценка 3")
-}
-else{
-    alert("Оценка 2")
-}
+
+// filter(element, index) возращает новый массив, удовлетворяет условию( все четные числа)
+//функция филтр дробит каждый элемент на свое значение
+//previous.concat(next) слияние массивов
+//array.slice //срез массив
+const arrayFirst = [-3, -2, -1]
+const arraySecond = [0, 1, 2]
+const arrayThird = [10, 20, 30]
+const newArray = arrayFirst.concat(arraySecond).concat(arrayThird)
+
+console.log(newArray)
+console.log(newArray.slice(1))
