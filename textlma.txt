@@ -837,3 +837,32 @@ const arrayThird = [10, 20, 30]
 
 
 console.log(arrayFirst.concat(arraySecond).concat(arrayThird))
+
+
+
+
+
+
+
+
+
+
+const arrayFirst = [-3, -2, -1]
+const arraySecond = [0, 1, 2]
+const arrayThird = [10, 20, 30]
+const newArray = arrayFirst.concat(arraySecond).concat(arrayThird)
+
+console.log(newArray)
+console.log(newArray.slice(1))
+
+
+
+
+
+
+
+
+
+<body>
+    <button oneclick="clicker()">CLICK</button>
+    <skript src="./class.js"> </skript>

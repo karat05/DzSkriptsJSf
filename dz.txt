@@ -1,0 +1,177 @@
+1 задание 
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <button id="yyy">Нажми меня</button>
+    <p id="idText">Исходный текст</p>
+
+
+    <script src="./class.js"></script>
+</body>
+</html>
+
+
+JS
+const button = document.getElementById("yyy");
+const text = document.getElementById("idText");
+const changeText = () => {
+text.textContent = "Текст изменен";
+};
+button.addEventListener("click", changeText);
+
+2 ЗАДАНИЕ 
+
+HTML 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="prikol">я хочу кушать</div>
+
+
+    <script src="./class.js"></script>
+</body>
+</html>
+
+JS
+const prikol = document.getElementById("prikol");
+const addClass = () => {
+    prikol.classList.add("active");
+};
+
+const removeClass = () => {
+    prikol.classList.remove("active");
+};
+
+prikol.addEventListener("mouseenter", addClass);
+prikol.addEventListener("mouseleave", removeClass);
+
+CSS
+#prikol {
+    width: 200px;
+    height: 100px;
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+   
+}
+
+.active {
+    background-color: rgb(1, 247, 75);
+}
+
+
+
+3 ЗАДАНИЕ
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <button id="silent">ДАВАЙ КЛИКНИ</button>
+    <div id="heal">ЗАКРОЙ БУУУУ</div>
+
+
+    <script src="./class.js"></script>
+</body>
+</html>
+
+JS
+const silent = document.getElementById("silent");
+const xxx = document.getElementById("heal");
+
+
+const toggleVisibility = () => {
+ 
+    if (xxx.style.display === "none") {
+        xxx.style.display = "block"; 
+    } else {
+        xxx.style.display = "none";
+    }
+};
+
+silent.addEventListener("click", toggleVisibility);
+
+CSS
+#silent {
+    padding: 10px 20px;
+    
+}
+
+#heal {
+    margin-top: 10px;
+    padding: 15px;
+}
+
+ЗАДАНИЕ 44444444444444444444
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="block"> блок</div>
+<button id="btn1">Изменить цвет фона</button>
+<button id="btn2">изменить размер шрифта</button>
+
+    <script src="./class.js"></script>
+</body>
+</html>
+
+JS
+const block = document.getElementById("block");
+const btn1 = document.getElementById("btn1");
+const btn2 = document.getElementById("btn2");
+
+const changeColor = () => {
+    block.style.backgroundColor = "lightcoral";
+};
+
+const changeSize = () => {
+    block.style.fontSize = "24px";
+    block.style.fontWeight = "bold";
+};
+btn1.addEventListener("click", changeColor);
+btn2.addEventListener("click", changeSize);
+
+
+
+CSS
+#block {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(248, 7, 7);
+    border: 1px solid #fa056b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+button {
+    padding: 10px 15px;
+    margin-right: 10px;
+}
